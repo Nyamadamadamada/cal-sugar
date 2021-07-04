@@ -15,7 +15,9 @@
       <v-list
         nav
         dense
-        class="d-none d-md-flex d-lg-flex d-xl-flex"
+        flat
+        class="d-none d-md-flex d-lg-flex d-xl-flex align-center"
+        color="#272727"
       >
         <v-list-item-group
           v-for="(item) in items"
@@ -29,6 +31,13 @@
         </v-list-item-group>
         <div>
           <a class="header-link" href="https://forms.gle/sh5XKkFEhdtj29u37">お問い合わせ</a>
+        </div>
+        <div class="ml-4">
+          <NuxtLink to="/blog">
+            <v-btn
+              outlined
+            >BLOG</v-btn>
+          </NuxtLink>
         </div>
       </v-list>
       <v-app-bar-nav-icon
@@ -45,6 +54,7 @@
       <v-list
         nav
         dense
+        flat
       >
         <v-list-item-group
           v-for="(item) in items"
@@ -60,8 +70,16 @@
         </v-list-item-group>
         <v-list-item>
           <v-list-item-title>
-            <a href="https://forms.gle/sh5XKkFEhdtj29u37">お問い合わせ</a>
+            <a class="nav-link" href="https://forms.gle/sh5XKkFEhdtj29u37">お問い合わせ</a>
           </v-list-item-title>
+        </v-list-item>
+        <v-list-item>
+          <NuxtLink to="/blog">
+            <v-btn
+              outlined
+              small
+            >BLOG</v-btn>
+          </NuxtLink>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -114,5 +132,9 @@ export default {
   .header-link {
     color: #fff !important;
     padding-left: 20px;
+  }
+
+  a.nav-link {
+    color: black !important;
   }
 </style>

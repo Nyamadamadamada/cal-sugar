@@ -2,6 +2,7 @@
   <v-footer
     color="#f9f6f3"
     padless
+    class="footer"
   >
     <v-row
       justify="center"
@@ -55,3 +56,9 @@ export default {
   })
 }
 </script>
+
+<style scoped>
+  .footer a {
+    color: #505050;
+  }
+</style>

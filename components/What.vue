@@ -16,7 +16,7 @@
             <p class="body-1">カルシュガーとは、<br>選択した食材の糖質総量を計算する無料ツールです。</p>
           </div>
           <NuxtLink to="/calculate">
-            <button class="button">糖質計算へ</button>
+            <button class="calsulate-btn">糖質計算へ</button>
           </NuxtLink>
         </v-card>
       </v-col>
@@ -100,6 +100,10 @@ button:hover::after {
 
   .whatis-card {
     padding: 0 4vw;
+  }
+
+  .calsulate-btn {
+    font-size: 5.5vw;
   }
 }
 </style>

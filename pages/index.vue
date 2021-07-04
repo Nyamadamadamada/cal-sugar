@@ -7,7 +7,7 @@
     <v-card class="start" flat>
       <p class="subtitle-1">まずは1品計算してみましょう</p>
       <NuxtLink to="/calculate">
-        <button class="button">糖質計算へ</button>
+        <button class="calsulate-btn">糖質計算へ</button>
       </NuxtLink>
     </v-card>
   </div>
@@ -84,6 +84,12 @@ export default {
 .start {
   margin: 10vh 0;
   text-align: center;
+}
+
+@media screen and (max-width: 601px) {
+  .calsulate-btn {
+    font-size: 5.5vw;
+  }
 }
 
 button {
